@@ -39294,6 +39294,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\main.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>css/style.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tg0aku7owp</Fingerprint>
+      <Integrity>3Vz6bPkDeSkYAgODc216KT5f6CBgy2k/M39aNzoDhms=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\toast-message.css'))">
       <SourceType>Package</SourceType>
       <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
@@ -39348,6 +39366,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\admin.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\checkout.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>js/checkout.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9ar8gblhd0</Fingerprint>
+      <Integrity>IegAAhjqpTs3AkH8faZTGgXG1/mGTlEMuyR1RdELKS4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\checkout.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\initialization.js'))">
       <SourceType>Package</SourceType>
       <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
@@ -39378,11 +39414,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>d4ifk0z5hf</Fingerprint>
-      <Integrity>g/KQYIFt8tfJVOWxYHxDWbVWg2JGx63stf+iEa2DG0k=</Integrity>
+      <Fingerprint>uot0j8ljru</Fingerprint>
+      <Integrity>TrlKh5HVNzw2+07p/TDOjwPS1UEogA/GOYjN5teyFVg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\main.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\toast-message.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>js/toast-message.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1mv85010bk</Fingerprint>
+      <Integrity>93iP1oSWiUT6hD2AcfPwevSukzzLoNSh4LNtjRnFrb4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\toast-message.js'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

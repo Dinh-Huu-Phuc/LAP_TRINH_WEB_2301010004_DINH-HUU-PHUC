@@ -8733,6 +8733,10 @@
       "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
+      "Id": "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\wwwroot\\css\\toast-message.css",
       "PackagePath": "staticwebassets\\css\\toast-message.css"
     },
@@ -8745,12 +8749,20 @@
       "PackagePath": "staticwebassets\\js\\admin.js"
     },
     {
+      "Id": "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\wwwroot\\js\\checkout.js",
+      "PackagePath": "staticwebassets\\js\\checkout.js"
+    },
+    {
       "Id": "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\wwwroot\\js\\initialization.js",
       "PackagePath": "staticwebassets\\js\\initialization.js"
     },
     {
       "Id": "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\wwwroot\\js\\toast-message.js",
+      "PackagePath": "staticwebassets\\js\\toast-message.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -114,9 +114,9 @@ function detailProduct(index) {
 
 function animationCart() {
     document.querySelector(".count-product-cart").style.animation = "slidein ease 1s"
-    setTimeout(()=>{
+    setTimeout(() => {
         document.querySelector(".count-product-cart").style.animation = "none"
-    },1000)
+    }, 1000)
 }
 
 // Them SP vao gio hang
@@ -293,13 +293,13 @@ function closeCart() {
 }
 
 // Open Search Advanced
-document.querySelector(".filter-btn").addEventListener("click",(e) => {
+document.querySelector(".filter-btn").addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(".advanced-search").classList.toggle("open");
     document.getElementById("home-service").scrollIntoView();
 })
 
-document.querySelector(".form-search-input").addEventListener("click",(e) => {
+document.querySelector(".form-search-input").addEventListener("click", (e) => {
     e.preventDefault();
     document.getElementById("home-service").scrollIntoView();
 })
@@ -314,7 +314,7 @@ function openSearchMb() {
     document.querySelector(".header-middle-center").style.display = "block";
     document.querySelector(".header-middle-right-item.close").style.display = "block";
     let liItem = document.querySelectorAll(".header-middle-right-item.open");
-    for(let i = 0; i < liItem.length; i++) {
+    for (let i = 0; i < liItem.length; i++) {
         liItem[i].style.setProperty("display", "none", "important")
     }
 }
@@ -325,7 +325,7 @@ function closeSearchMb() {
     document.querySelector(".header-middle-center").style.display = "none";
     document.querySelector(".header-middle-right-item.close").style.display = "none";
     let liItem = document.querySelectorAll(".header-middle-right-item.open");
-    for(let i = 0; i < liItem.length; i++) {
+    for (let i = 0; i < liItem.length; i++) {
         liItem[i].style.setProperty("display", "block", "important")
     }
 }
@@ -477,7 +477,7 @@ loginButton.addEventListener('click', () => {
         if (vitri == -1) {
             toast({ title: 'Error', message: 'Tài khoản của bạn không tồn tại', type: 'error', duration: 3000 });
         } else if (accounts[vitri].password == passlog) {
-            if(accounts[vitri].status == 0) {
+            if (accounts[vitri].status == 0) {
                 toast({ title: 'Warning', message: 'Tài khoản của bạn đã bị khóa', type: 'warning', duration: 3000 });
             } else {
                 localStorage.setItem('currentuser', JSON.stringify(accounts[vitri]));
@@ -503,7 +503,7 @@ function kiemtradangnhap() {
         document.querySelector('.header-middle-right-menu').innerHTML = `<li><a href="javascript:;" onclick="myAccount()"><i class="fa-solid fa-circle-user"></i> Tài khoản của tôi</a></li>
             <li><a href="javascript:;" onclick="orderHistory()"><i class="fa-solid fa-bags-shopping"></i> Đơn hàng đã mua</a></li>
             <li class="border"><a id="logout" href="javascript:;"><i class="fa-solid fa-right-from-bracket"></i> Thoát tài khoản</a></li>`
-        document.querySelector('#logout').addEventListener('click',logOut)
+        document.querySelector('#logout').addEventListener('click', logOut)
     }
 }
 
@@ -522,11 +522,11 @@ function logOut() {
 
 function checkAdmin() {
     let user = JSON.parse(localStorage.getItem('currentuser'));
-    if(user && user.userType == 1) {
+    if (user && user.userType == 1) {
         let node = document.createElement(`li`);
         node.innerHTML = `<a href="./admin.html"><i class="fa-solid fa-gear"></i> Quản lý cửa hàng</a>`
         document.querySelector('.header-middle-right-menu').prepend(node);
-    } 
+    }
 }
 
 window.onload = kiemtradangnhap();
@@ -695,33 +695,44 @@ function renderOrderProduct() {
             chiTietDon.forEach(sp => {
                 let infosp = getProductInfo(sp.id);
                 productHtml += `<div class="order-history">
-                    <div class="order-history-left">
-                        <img src="${infosp.img}" alt="">
-                        <div class="order-history-info">
-                            <h4>${infosp.title}!</h4>
-                            <p class="order-history-note"><i class="fa-solid fa-pen"></i> ${sp.note}</p>
-                            <p class="order-history-quantity">x${sp.soluong}</p>
-                        </div>
-                    </div>
-                    <div class="order-history-right">
-                        <div class="order-history-price">
-                            <span class="order-history-current-price">${vnd(sp.price)}</span>
-                        </div>                         
-                    </div>
-                </div>`;
+            <div class="order-history-left">
+                <img src="${infosp.img}" alt="">
+                <div class="order-history-info">
+                    <h4>${infosp.title}!</h4>
+                    <p class="order-history-note"><i class="fa-solid fa-pen"></i> ${sp.note}</p>
+                    <p class="order-history-quantity">x${sp.soluong}</p>
+                </div>
+            </div>
+            <div class="order-history-right">
+                <div class="order-history-price">
+                    <span class="order-history-current-price">${vnd(sp.price)}</span>
+                </div>                         
+            </div>
+        </div>`;
             });
-            let textCompl = item.trangthai == 1 ? "Đã xử lý" : "Đang xử lý";
-            let classCompl = item.trangthai == 1 ? "complete" : "no-complete"
+
+            let textCompl = item.trangthai == 1
+                ? '<i class="fa-solid fa-check"></i> Đã xử lý'
+                : '<i class="fa-solid fa-spinner fa-spin"></i> Đang xử lý';
+            let classCompl = item.trangthai == 1 ? "complete" : "no-complete";
+            let confirmButton = item.trangthai == 0 
+                ? `<button class="confirm-order-btn" onclick="confirmOrder('${item.id}')"><i class="fa-solid fa-check-circle"></i> Xác nhận</button>`
+                : '';
+
             productHtml += `<div class="order-history-control">
-                <div class="order-history-status">
-                    <span class="order-history-status-sp ${classCompl}">${textCompl}</span>
-                    <button id="order-history-detail" onclick="detailOrder('${item.id}')"><i class="fa-solid fa-eye"></i> Xem chi tiết</button>
-                </div>
-                <div class="order-history-total">
-                    <span class="order-history-total-desc">Tổng tiền: </span>
-                    <span class="order-history-toltal-price">${vnd(item.tongtien)}</span>
-                </div>
-            </div>`
+        <div class="order-history-status">
+            <span class="order-history-status-sp ${classCompl}">${textCompl}</span>
+            ${confirmButton}
+            <button id="order-history-detail" onclick="detailOrder('${item.id}')">
+                <i class="fa-solid fa-eye"></i> Xem chi tiết
+            </button>
+        </div>
+        <div class="order-history-total">
+            <span class="order-history-total-desc">Tổng tiền: </span>
+            <span class="order-history-toltal-price">${vnd(item.tongtien)}</span>
+        </div>
+    </div>`;
+
             productHtml += `</div>`;
             orderHtml += productHtml;
         });
@@ -729,12 +740,38 @@ function renderOrderProduct() {
     document.querySelector(".order-history-section").innerHTML = orderHtml;
 }
 
+//thêm hàm xử lý xác nhận
+function confirmOrder(orderId) {
+    let order = JSON.parse(localStorage.getItem('order'));
+    let orderIndex = order.findIndex(item => item.id === orderId);
+    
+    if (orderIndex !== -1 && order[orderIndex].trangthai === 0) {
+        // Cập nhật trạng thái đơn hàng thành "Đã xử lý" (1)
+        order[orderIndex].trangthai = 1;
+        order[orderIndex].thoigiangiao = formatDate(new Date()); // Thêm thời gian giao hàng
+        
+        // Lưu lại vào localStorage
+        localStorage.setItem('order', JSON.stringify(order));
+        
+        // Hiển thị thông báo
+        toast({ 
+            title: 'Success', 
+            message: 'Đơn hàng đã được xác nhận thành công!', 
+            type: 'success', 
+            duration: 3000 
+        });
+        
+        // Cập nhật lại giao diện
+        renderOrderProduct();
+    }
+}
+
 // Get Order Details
 function getOrderDetails(madon) {
     let orderDetails = localStorage.getItem("orderDetails") ? JSON.parse(localStorage.getItem("orderDetails")) : [];
     let ctDon = [];
     orderDetails.forEach(item => {
-        if(item.madon == madon) {
+        if (item.madon == madon) {
             ctDon.push(item);
         }
     });
@@ -814,7 +851,7 @@ const headerNav = document.querySelector(".header-bottom");
 let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
-    if(lastScrollY < window.scrollY) {
+    if (lastScrollY < window.scrollY) {
         headerNav.classList.add("hide")
     } else {
         headerNav.classList.remove("hide")
@@ -825,7 +862,7 @@ window.addEventListener("scroll", () => {
 // Page
 function renderProducts(showProduct) {
     let productHtml = '';
-    if(showProduct.length == 0) {
+    if (showProduct.length == 0) {
         document.getElementById("home-title").style.display = "none";
         productHtml = `<div class="no-result"><div class="no-result-h">Tìm kiếm không có kết quả</div><div class="no-result-p">Xin lỗi, chúng tôi không thể tìm được kết quả hợp với tìm kiếm của bạn</div><div class="no-result-i"><i class="fa-solid fa-face-sad-cry"></i></div></div>`;
     } else {
@@ -867,7 +904,7 @@ function searchProducts(mode) {
     let valueCategory = document.getElementById("advanced-search-category-select").value;
     let minPrice = document.getElementById("min-price").value;
     let maxPrice = document.getElementById("max-price").value;
-    if(parseInt(minPrice) > parseInt(maxPrice) && minPrice != "" && maxPrice != "") {
+    if (parseInt(minPrice) > parseInt(maxPrice) && minPrice != "" && maxPrice != "") {
         alert("Giá đã nhập sai !");
     }
 
@@ -879,16 +916,16 @@ function searchProducts(mode) {
         return item.title.toString().toUpperCase().includes(valeSearchInput.toString().toUpperCase());
     })
 
-    if(minPrice == "" && maxPrice != "") {
+    if (minPrice == "" && maxPrice != "") {
         result = result.filter((item) => item.price <= maxPrice);
     } else if (minPrice != "" && maxPrice == "") {
         result = result.filter((item) => item.price >= minPrice);
-    } else if(minPrice != "" && maxPrice != "") {
+    } else if (minPrice != "" && maxPrice != "") {
         result = result.filter((item) => item.price <= maxPrice && item.price >= minPrice);
     }
 
     document.getElementById("home-service").scrollIntoView();
-    switch (mode){
+    switch (mode) {
         case 0:
             result = JSON.parse(localStorage.getItem('products'));;
             document.querySelector('.form-search-input').value = "";
@@ -897,10 +934,10 @@ function searchProducts(mode) {
             document.getElementById("max-price").value = "";
             break;
         case 1:
-            result.sort((a,b) => a.price - b.price)
+            result.sort((a, b) => a.price - b.price)
             break;
         case 2:
-            result.sort((a,b) => b.price - a.price)
+            result.sort((a, b) => b.price - a.price)
             break;
     }
     showHomeProduct(result)
