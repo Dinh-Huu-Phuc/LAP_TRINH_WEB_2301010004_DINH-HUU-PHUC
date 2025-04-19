@@ -120,12 +120,12 @@ function paginationChange(page, productAll, currentPage) {
 function showProductArr(arr) {
     let productHtml = "";
     if(arr.length == 0) {
-        productHtml = `<div class="no-result"><div class="no-result-i"><i class="fa-light fa-face-sad-cry"></i></div><div class="no-result-h">Không có sản phẩm để hiển thị</div></div>`;
+        productHtml = `<div class="no-result"><div class="no-result-i"><i class="fa-solid fa-face-sad-cry"></i></div><div class="no-result-h">Không có sản phẩm để hiển thị</div></div>`;
     } else {
         arr.forEach(product => {
             let btnCtl = product.status == 1 ? 
-            `<button class="btn-delete" onclick="deleteProduct(${product.id})"><i class="fa-regular fa-trash"></i></button>` :
-            `<button class="btn-delete" onclick="changeStatusProduct(${product.id})"><i class="fa-regular fa-eye"></i></button>`;
+            `<button class="btn-delete" onclick="deleteProduct(${product.id})"><i class="fa-solid fa-trash"></i></button>` :
+            `<button class="btn-delete" onclick="changeStatusProduct(${product.id})"><i class="fa-solid fa-eye"></i></button>`;
             productHtml += `
             <div class="list">
                     <div class="list-left">
@@ -142,7 +142,7 @@ function showProductArr(arr) {
                     </div>
                     <div class="list-control">
                     <div class="list-tool">
-                        <button class="btn-edit" onclick="editProduct(${product.id})"><i class="fa-light fa-pen-to-square"></i></button>
+                        <button class="btn-edit" onclick="editProduct(${product.id})"><i class="fa-solid fa-pen-to-square"></i></button>
                         ${btnCtl}
                     </div>                       
                 </div>
@@ -401,7 +401,7 @@ function showOrder(arr) {
             <td>${vnd(item.tongtien)}</td>                               
             <td>${status}</td>
             <td class="control">
-            <button class="btn-detail" id="" onclick="detailOrder('${item.id}')"><i class="fa-regular fa-eye"></i> Chi tiết</button>
+            <button class="btn-detail" id="" onclick="detailOrder('${item.id}')"><i class="fa-solid fa-eye"></i> Chi tiết</button>
             </td>
             </tr>      
             `;
@@ -444,7 +444,7 @@ function detailOrder(id) {
                 <img src="${detaiSP.img}" alt="">
                 <div class="order-product-info">
                     <h4>${detaiSP.title}</h4>
-                    <p class="order-product-note"><i class="fa-light fa-pen"></i> ${item.note}</p>
+                    <p class="order-product-note"><i class="fa-solid fa-pen"></i> ${item.note}</p>
                     <p class="order-product-quantity">SL: ${item.soluong}<p>
                 </div>
             </div>
@@ -459,31 +459,31 @@ function detailOrder(id) {
     spHtml += `<div class="modal-detail-right">
         <ul class="detail-order-group">
             <li class="detail-order-item">
-                <span class="detail-order-item-left"><i class="fa-light fa-calendar-days"></i> Ngày đặt hàng</span>
+                <span class="detail-order-item-left"><i class="fa-solid fa-calendar-days"></i> Ngày đặt hàng</span>
                 <span class="detail-order-item-right">${formatDate(order.thoigiandat)}</span>
             </li>
             <li class="detail-order-item">
-                <span class="detail-order-item-left"><i class="fa-light fa-truck"></i> Hình thức giao</span>
+                <span class="detail-order-item-left"><i class="fa-solid fa-truck"></i> Hình thức giao</span>
                 <span class="detail-order-item-right">${order.hinhthucgiao}</span>
             </li>
             <li class="detail-order-item">
-            <span class="detail-order-item-left"><i class="fa-thin fa-person"></i> Người nhận</span>
+            <span class="detail-order-item-left"><i class="fa-solid fa-person"></i> Người nhận</span>
             <span class="detail-order-item-right">${order.tenguoinhan}</span>
             </li>
             <li class="detail-order-item">
-            <span class="detail-order-item-left"><i class="fa-light fa-phone"></i> Số điện thoại</span>
+            <span class="detail-order-item-left"><i class="fa-solid fa-phone"></i> Số điện thoại</span>
             <span class="detail-order-item-right">${order.sdtnhan}</span>
             </li>
             <li class="detail-order-item tb">
-                <span class="detail-order-item-left"><i class="fa-light fa-clock"></i> Thời gian giao</span>
+                <span class="detail-order-item-left"><i class="fa-solid fa-clock"></i> Thời gian giao</span>
                 <p class="detail-order-item-b">${(order.thoigiangiao == "" ? "" : (order.thoigiangiao + " - ")) + formatDate(order.ngaygiaohang)}</p>
             </li>
             <li class="detail-order-item tb">
-                <span class="detail-order-item-t"><i class="fa-light fa-location-dot"></i> Địa chỉ nhận</span>
+                <span class="detail-order-item-t"><i class="fa-solid fa-location-dot"></i> Địa chỉ nhận</span>
                 <p class="detail-order-item-b">${order.diachinhan}</p>
             </li>
             <li class="detail-order-item tb">
-                <span class="detail-order-item-t"><i class="fa-light fa-note-sticky"></i> Ghi chú</span>
+                <span class="detail-order-item-t"><i class="fa-solid fa-note-sticky"></i> Ghi chú</span>
                 <p class="detail-order-item-b">${order.ghichu}</p>
             </li>
         </ul>
@@ -644,7 +644,7 @@ function showThongKe(arr,mode) {
         <td><div class="prod-img-title"><img class="prd-img-tbl" src="${mergeObj[i].img}" alt=""><p>${mergeObj[i].title}</p></div></td>
         <td>${mergeObj[i].quantity}</td>
         <td>${vnd(mergeObj[i].doanhthu)}</td>
-        <td><button class="btn-detail product-order-detail" data-id="${mergeObj[i].id}"><i class="fa-regular fa-eye"></i> Chi tiết</button></td>
+        <td><button class="btn-detail product-order-detail" data-id="${mergeObj[i].id}"><i class="fa-solid fa-eye"></i> Chi tiết</button></td>
         </tr>      
         `;
     }
@@ -735,8 +735,8 @@ function showUserArr(arr) {
             <td>${formatDate(account.join)}</td>
             <td>${tinhtrang}</td>
             <td class="control control-table">
-            <button class="btn-edit" id="edit-account" onclick='editAccount(${account.phone})' ><i class="fa-light fa-pen-to-square"></i></button>
-            <button class="btn-delete" id="delete-account" onclick="deleteAcount(${index})"><i class="fa-regular fa-trash"></i></button>
+            <button class="btn-edit" id="edit-account" onclick='editAccount(${account.phone})' ><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="btn-delete" id="delete-account" onclick="deleteAcount(${index})"><i class="fa-solid fa-trash"></i></button>
             </td>
         </tr>`
         })

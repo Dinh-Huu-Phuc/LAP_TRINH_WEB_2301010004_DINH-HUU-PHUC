@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC.csproj": {}
+    "H:\\Thap_Cam\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC.csproj": {}
   },
   "projects": {
-    "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC.csproj": {
+    "H:\\Thap_Cam\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC.csproj",
+        "projectUniqueName": "H:\\Thap_Cam\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC.csproj",
         "projectName": "LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC",
-        "projectPath": "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC.csproj",
+        "projectPath": "H:\\Thap_Cam\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "H:\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\obj\\",
+        "outputPath": "H:\\Thap_Cam\\LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,13 +52,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qgwch1527r</Fingerprint>
-      <Integrity>WlTynBJ02GI1MUzcd2T1OkCMTvT17Hi69Yj3Oet7cUY=</Integrity>
+      <Fingerprint>dfumeb5z6b</Fingerprint>
+      <Integrity>iS1M2SrKxi8wz53rKuPWCPzYLpPf2XYb9OhifGBXDr4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin.html'))</OriginalItemSpec>
@@ -39096,6 +39096,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\banner-5.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\banner-6.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>assets/img/banner-6.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tdhhcyg97e</Fingerprint>
+      <Integrity>v/ll//5MfZKBdDMTv0SbGBg0AbKWsUNhJFipF73BIiE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\banner-6.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\blank-image.png'))">
       <SourceType>Package</SourceType>
       <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
@@ -39168,6 +39186,60 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\Black_Myth_Wukong.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\DC World.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>assets/img/file_img_game/DC World.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bfhkuuwt41</Fingerprint>
+      <Integrity>yRQa04YG+DHxIjBneYh4buGozVrt4i0K9vw+5tdUXHA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\DC World.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\GhostWireTokyo.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>assets/img/file_img_game/GhostWireTokyo.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mb5r0rs4hd</Fingerprint>
+      <Integrity>sl8Wt/usIs9xPekp2n4j00zRD3yQmbDv+eVSVgQlXac=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\GhostWireTokyo.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\HaloInfinite.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>assets/img/file_img_game/HaloInfinite.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gjxyujm5ok</Fingerprint>
+      <Integrity>TIjum/nSkWcqOfIyE/D3pTecTu0yBql1y2JBWdJHoSU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\HaloInfinite.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\mechaBreak.png'))">
       <SourceType>Package</SourceType>
       <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
@@ -39186,6 +39258,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\mechaBreak.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\naraka.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>assets/img/file_img_game/naraka.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u7ypwrntof</Fingerprint>
+      <Integrity>epVhIoSoupoFt0rv68AHDIsJwpRGKVkuUxhvl12Fa9k=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\naraka.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\PUBG.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>assets/img/file_img_game/PUBG.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>33knisxz1h</Fingerprint>
+      <Integrity>kSivs+rf53KCosscNU2w/eOHIbQOQhMVwSoNT0gegUs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\PUBG.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\VALORANT.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
@@ -39203,6 +39311,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\VALORANT.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\WarRobot.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>assets/img/file_img_game/WarRobot.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u57jmg39dj</Fingerprint>
+      <Integrity>AjFiXV/fsUVSVFcwBmSA60LnVDLEdNwFjysvLrJPNgw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\file_img_game\WarRobot.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo.png'))">
       <SourceType>Package</SourceType>
@@ -39342,8 +39468,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>g6tkua4riy</Fingerprint>
-      <Integrity>SOku7iU0bgGHo3ch0EtTYLV4z9Azq7tg2cNm/9xA5Eo=</Integrity>
+      <Fingerprint>2z2ttiyrn8</Fingerprint>
+      <Integrity>TlkzXLXOUPVytnjipHWv6D8SRKYEGMwhn42Z9XPzK+Q=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
@@ -39360,8 +39486,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mqsmxuy9jy</Fingerprint>
-      <Integrity>Amy3wO/QZESppeB4yrDvfCgI7F/XvniPOkDoHZjBlW4=</Integrity>
+      <Fingerprint>8jc70ykqtr</Fingerprint>
+      <Integrity>NMPHn+FVnQUIXcP7diXXki8HTB+PilNYlvW79vO2ZNA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\admin.js'))</OriginalItemSpec>
@@ -39383,6 +39509,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\checkout.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\DataBaseLogin.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LAP_TRINH_WEB_2301010004_DINH-HUU-PHUC</BasePath>
+      <RelativePath>js/DataBaseLogin.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>krmfm1yb56</Fingerprint>
+      <Integrity>AHvzPlK+ObBfEDG7FMeLntLrK0tAJ1d6OeAvisnomds=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\DataBaseLogin.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\initialization.js'))">
       <SourceType>Package</SourceType>

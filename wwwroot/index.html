@@ -20,7 +20,7 @@
                 <div class="header-top-left">
                     <ul class="header-top-list">
                         <li><a href=""><i class="fa-solid fa-phone"></i> 0123 456 789 (miễn phí)</a></li>
-                        <li><a href=""><i class="fa-light fa-location-dot"></i> Xem vị trí cửa hàng</a></li>
+                        <li><a href=""><i class="fa-solid fa-location-dot"></i> Xem vị trí cửa hàng</a></li>
                     </ul>
                 </div>
                 <div class="header-top-right">
@@ -53,12 +53,12 @@
                     <ul class="header-middle-right-list">
                         <li class="header-middle-right-item dnone open" onclick="openSearchMb()">
                             <div class="cart-icon-menu">
-                                <i class="fa-light fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                         </li>
                         <li class="header-middle-right-item close" onclick="closeSearchMb()">
                             <div class="cart-icon-menu">
-                                <i class="fa-light fa-circle-xmark"></i>
+                                <i class="fa-solid fa-circle-xmark"></i>
                             </div>
                         </li>
                         <li class="header-middle-right-item dropdown open">
@@ -126,7 +126,7 @@
                 <input type="number" placeholder="tối thiểu..." id="min-price" onchange="searchProducts()">
                 <span>đến</span>
                 <input type="number" placeholder="tối đa..." id="max-price" onchange="searchProducts()">
-                <button id="advanced-search-price-btn"><i class="fa-light fa-magnifying-glass-dollar"></i></button>
+                <button id="advanced-search-price-btn"><i class="fa-solid fa-magnifying-glass-dollar"></i></button>
             </div>
             <div class="advanced-search-control">
                 <button id="sort-ascending" onclick="searchProducts(1)"><i
@@ -142,7 +142,7 @@
     <main class="main-wrapper">
         <div class="container" id="trangchu">
             <div class="home-slider">
-                <img src="./assets/img/banner-1.png" alt="">
+                <img src="./assets/img/banner-6.png" alt="">
             </div>
             <div class="home-service" id="home-service">
                 <div class="home-service-item">
@@ -271,7 +271,7 @@
         </div>
     </main>
     <div class="modal product-detail">
-        <button class="modal-close close-popup"><i class="fa-thin fa-xmark"></i></button>
+        <button class="modal-close close-popup"><i class="fa-solid fa-xmark"></i></button>
         <div class="modal-container mdl-cnt" id="product-detail-content">
         </div>
     </div>
@@ -317,6 +317,7 @@
                             <p class="form-message-checkbox form-message"></p>
                         </div>
                         <button class="form-submit" id="signup-button">Đăng ký</button>
+                        <p id="result" style="margin-top: 10px; color: green;"></p>
                     </form>
                     <p class="change-login">Bạn đã có tài khoản ? <a href="javascript:;" class="login-link">Đăng nhập
                             ngay</a></p>
@@ -705,6 +706,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/checkout.js"></script>
     <script src="./js/toast-message.js"></script>
+    <script src="./js/DataBaseLogin.js"></script>
 </body>
 
 </html>
